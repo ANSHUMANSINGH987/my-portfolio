@@ -1,0 +1,89 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 0.875rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-initials {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.separator {
+  color: var(--text-muted);
+}
+
+.logo-name {
+  color: var(--text-secondary);
+}
+
+.nav-center {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+}
+
+.nav-link:focus-visible,
+.command-trigger:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 4px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.command-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.35rem 0.5rem 0.35rem 0.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.command-trigger:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--border-medium);
+  color: var(--text-primary);
+}
+
+.search-icon {
+  color: var(--text-muted);
+}
+
+.kbd-group {
+  display: flex;
+  gap: 0.25rem;
+}
+
+kbd {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 0.1rem 0.3rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-light);
+  border-radius: 3px;
+  color: var(--text-muted);
+}

@@ -1,0 +1,52 @@
+.footer-section {
+  padding-bottom: 4rem;
+}
+
+.footer-header {
+  border-bottom: none;
+  margin-bottom: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border-light);
+  padding-top: 3rem;
+}
+
+.footer-quote {
+  font-size: 1rem;
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-quote p {
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+.footer-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.resume-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--border-medium);
+}
+
+.resume-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+}
